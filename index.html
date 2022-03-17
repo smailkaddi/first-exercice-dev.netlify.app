@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css" </head> <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </table>
+    <table id="storeList">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date de création</th>
+                <th>Etat</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Matricule</th>
+                <th>Action</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div class="Add-button">
+        <button class="open-button" onclick="openForm()">Ajouter utilisateur</button>
+
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <h1> Ajouter utilisateur </h1>
+        <form autocomplete="off" onsubmit="onFormSubmit()" class="form-container">
+
+            <div class="grid-item">
+                <label class="" for="id">ID </label><br>
+                <input type="number" name="id" id="id">
+            </div>
+            <div class="grid-item">
+                <label for="createdDate">date de création</label><br>
+                <input type="text" name="createdDate" id="createdDate">
+            </div>
+            <div class="grid-item">
+                <label for="status">Etat </label><br>
+                <input type="text" name="status" id="status">
+            </div>
+            <div class="grid-item">
+                <label for="firstName">Nom </label><br>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="grid-item">
+                <label for="lastName">Prenom </label><br>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="grid-item">
+                <label for="userName">Nom d'utilisateur </label><br>
+                <input type="text" name="userName" id="userName">
+            </div>
+            <div class="grid-item">
+                <label for="registrationNumber">Matricule </label><br>
+                <input type="number" name="registrationNumber" id="registrationNumber">
+            </div>
+
+            <div id="form_button">
+                <input id="Enregister" type="submit" value="Enregister">
+
+            </div>
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+    </body>
+
+</html>
